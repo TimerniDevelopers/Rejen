@@ -1170,6 +1170,9 @@ li {
 .object-fit{
     object-fit: cover;
 }
+.object-content{
+    object-fit: contain;
+}
 .com-btn {
     font-size: 15px;
     font-weight: 600;

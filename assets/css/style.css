@@ -1668,10 +1668,92 @@ opacity: 1;
 /*** 
 
 ====================================================================
-	News Section
+	course Section
 ====================================================================
 
 ***/
+/* course  */
+.course-area .content {
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+.course-price {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  display: flex;
+  text-transform: uppercase;
+  z-index: 9;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  gap: 4px;
+}
+.course-area .course-price .free {
+  color: rgb(58, 181, 0);
+  text-transform: capitalize;
+}
+.course-area .course-price .price {
+  color: var(--thim-body-primary-color);
+}
+.course-area .content .sale {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  position: absolute;
+  z-index: 9;
+  border-top: 86px solid rgb(255, 174, 0);
+  border-right: 86px solid transparent;
+}
+.course-area .content .sale .text-sale {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -68px;
+  display: inline-block;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.course-area .top-content{
+  position: relative;
+  overflow: hidden;
+}
+.course-area .top-content img {
+  transition: 0.5s ease-in-out;
+
+}
+.course-area .top-content a:hover img {
+  transform: scale(1.2);
+}
+.course-area .bottom-content{
+  padding: 15px;
+}
+.course-area .bottom-content .course-name{
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  color: #000;
+  margin-bottom: 4px;
+}
+.course-area .bottom-content .course-title{
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  /* color: #e0a965; */
+  color: #2f047a;
+  margin-bottom: 8px;
+}
+
+
 
 /*** 
 
