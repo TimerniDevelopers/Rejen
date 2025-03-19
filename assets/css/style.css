@@ -26,8 +26,8 @@
 :root {
   --theme-color-light: #ffffff;
   --theme-color-dark: #18191c;
-  --theme-color1: #ff0000;
-  --theme-color2: #2f047a;
+  --theme-color1: #ec6608;
+  --theme-color2: #009ab1;
   --bg-theme-color1: var(--theme-color1);
   --bg-theme-color2: var(--theme-color2);
   --text-color-bg-theme-color1: #222;
@@ -243,7 +243,7 @@ label {
 
 .popup-video{
   display: inline-block;
-  background: #ff0000;
+  background: #ec6608;
   color: #fff;
   height: 80px;
   width: 80px;
@@ -255,7 +255,7 @@ label {
 }
 .popup-video:hover {
   background: #ffffff;
-  color: #ff0000;
+  color: #ec6608;
 }
 .hero-wrapper h2 {
   font-size: 80px;
@@ -299,7 +299,7 @@ label {
 }
 
 .main-menu ul li .active {
-  color: #ff0000;
+  color: #ec6608;
 }
 
 .main-menu ul li  a {
@@ -316,7 +316,7 @@ color: var(--bg-theme-color2);
 }
 .header-transparent-3 .sticky .main-menu ul li .active,
 .header-transparent-3 .main-menu ul li .active {
-  color: #ff0000;
+  color: #ec6608;
 }
 
 
@@ -341,11 +341,11 @@ max-width: 130px;
 }
 
 .header-transparent-3 .main-menu ul li:hover>a {
-  color: #ff0000;
+  color: #ec6608;
 }
 
 .header-transparent-3 .main-menu ul li .active {
-  color: #ff0000;
+  color: #ec6608;
 }
 
 .main-menu ul li .sub-menu {
@@ -355,7 +355,7 @@ max-width: 130px;
   width: 245px;
   background: #ffffff;
   padding: 13px 18px;
-  border-top: 4px solid #ff0000;
+  border-top: 4px solid #ec6608;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -366,7 +366,7 @@ max-width: 130px;
   content: '';
   width: 17px;
   height: 9px;
-  background-color: #ff0000;
+  background-color: #ec6608;
   position: absolute;
   left: 20px;
   bottom: 100%;
@@ -421,7 +421,7 @@ button:not(:disabled) {
 }
 
 .side-menu-icon i {
-  color: #ff0000;
+  color: #ec6608;
   font-size: 32px;
   cursor: pointer;
   position: relative;
@@ -473,8 +473,8 @@ button:not(:disabled) {
 }
 
 .sidebar__close-btn:hover {
-  background: #ff0000;
-  border-color: #ff0000;
+  background: #ec6608;
+  border-color: #ec6608;
   color: #ffffff;
 }
 
@@ -599,9 +599,9 @@ button:not(:disabled) {
 }
 
 .mean-container .mean-nav ul li a.mean-expand:hover {
-  background: #ff0000;
+  background: #ec6608;
   color: #ffffff;
-  border-color: #ff0000;
+  border-color: #ec6608;
 }
 
 .mean-container .mean-nav ul li>a.mean-expand i {
@@ -644,7 +644,7 @@ button:not(:disabled) {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #ff0000;
+  background: #ec6608;
   color: #ffffff;
 }
 
@@ -733,7 +733,7 @@ select {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #ff0000;
+  background-color: #ec6608;
   -webkit-animation: preloader 1.3s linear infinite;
   animation: preloader 1.3s linear infinite;
 }
@@ -815,7 +815,7 @@ select {
   font-size: 13px;
   text-transform: capitalize;
   line-height: 24px;
-  color: #ff0000;
+  color: #ec6608;
   margin-bottom: 0;
 }
 .contact-form .form-group .select2-container--default .select2-selection--single,
@@ -1533,6 +1533,96 @@ opacity: 1;
 /*** 
 
 ====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+.service-area {
+  text-align: center;
+  padding: 60px 0px;
+}
+.service__item-two {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.service__thumb-two {
+  overflow: hidden;
+  position: relative;
+}
+.service__item-two:hover .service__thumb-two:before {
+  height: 100%;
+}
+.service__thumb-two:before {
+  background: #0e104b;
+  border-radius: 15px;
+  content: "";
+  height: 0;
+  left: 0;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  transition: all .4sease-out 0s;
+  width: 100%;
+}
+.service__thumb-two img {
+  border-radius: 15px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  transition: all .3sease-out 0s;
+}
+.service__item-two:hover .service__content-two {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.service__content-two {
+  left: 30px;
+  margin-top: 100px;
+  opacity: 0;
+  padding: 30px 0;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .5sease-out 0s;
+  visibility: hidden;
+}
+.service__content-two .title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.service__content-two span {
+  color: #009ab1;
+  /* display: block; */
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.link-arrow-two a {
+  align-items: center;
+  background: #009ab1;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50px;
+}
+.link-arrow a svg {
+  width: 20px;
+}
+
+/*** 
+
+====================================================================
 	News Section
 ====================================================================
 
@@ -1623,8 +1713,20 @@ opacity: 1;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
+  position: relative;
 }
-
+.news-style-one .image-box:after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .35), transparent 75%);
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  transition: all .3s ease-out;
+  width: 100%;
+}
 .news-style-one .inner-box:hover .image-box img{
 	opacity:0.80;
 	-webkit-transform:scale(1.1,1.1);
@@ -1663,6 +1765,23 @@ opacity: 1;
 	position:relative;
 	margin-bottom:25px;
 	color:#5a5a5a;
+}
+.event-section .news-style-one .inner-box {
+  padding-left: 0px;
+ 
+}
+.event-section .news-style-one .inner-box .lower-content {
+  background-color: #ffffff;
+  border: 0 solid #69727d;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+  padding: 20px;
+}
+.event-section  .news-style-one .inner-box .text {
+  margin-bottom: 15px;
+}
+.event-section .news-style-one .image-box{
+  margin: 0;
 }
 
 /*** 
@@ -1729,6 +1848,7 @@ opacity: 1;
 }
 .course-area .top-content img {
   transition: 0.5s ease-in-out;
+  max-height: 410px;
 
 }
 .course-area .top-content a:hover img {

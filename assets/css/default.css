@@ -1134,7 +1134,7 @@ li {
     position: relative;
     font-size: 15px;
     line-height: 20px;
-    padding: 20px 50px;
+    padding: 15px 35px;
     font-weight: 600;
     overflow: hidden;
     z-index: 0;
@@ -1179,7 +1179,7 @@ li {
     line-height: 1.5em;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
-    border-color: #f5900d;
+    border-color: #ec6608;
     border-radius: 5px 5px 5px 5px;
     padding: 15px 35px 15px 35px;
     transition: all .3s;
@@ -1190,11 +1190,11 @@ li {
   .com-btn2:hover,
   .com-btn1{
     color: #FFFFFF;
-    background-color: #f5900d;
+    background-color: #ec6608;
   }
   .com-btn2,
   .com-btn1:hover{
-    color:#f5900d;
+    color:#ec6608;
     background-color:#FFFFFF;
   }
 .play-now{
@@ -1818,10 +1818,23 @@ Page Title
     font-size: 14px !important;
     color: #fff;
 }
-
+.truncate-1-custom{
+    -webkit-line-clamp: 1;   
+}
+.truncate-3-custom{
+    -webkit-line-clamp: 3;
+}
 .truncate-2-custom {
     -webkit-line-clamp: 2;
 }
+.truncate-4-custom {
+    -webkit-line-clamp:4 ;
+}
+.truncate-5-custom {
+    -webkit-line-clamp:5 ;
+}
+.truncate-5-custom,
+.truncate-4-custom,
 .truncate-3-custom,
 .truncate-1-custom, .truncate-2-custom {
     -webkit-box-orient: vertical;
