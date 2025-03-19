@@ -160,7 +160,7 @@ p {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
-  color: #7e7e7e;
+  color: #413b3b;
   margin-bottom: 15px;
 }
 
@@ -172,7 +172,7 @@ hr {
 }
 
 label {
-  color: #7e7e7e;
+  color: #413b3b;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
@@ -213,7 +213,7 @@ label {
 }
 
 .theme-overlay::before {
-  background: #2f047a none repeat scroll 0 0;
+  background: var(--theme-color2) none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -2023,7 +2023,7 @@ font-weight: 700;
   border: 1px solid #dadbec;
   border-radius: 10px;
   margin-bottom: 40px;
-  padding: 26px 30px 30px;
+  padding: 25px;
 }
 .sidebar__widget-title {
   font-size: 22px;
@@ -2072,10 +2072,9 @@ font-weight: 700;
   width: 80px;
 }
 .sidebar__post-content .title {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 10px;
- 
   text-transform: capitalize;
 }
 .truncate-1-custom{
@@ -2227,8 +2226,7 @@ font-weight: 700;
   .about__list-box .list-wrap li {
     color: #000;
     display: flex;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
     gap: 9px;
     margin-bottom: 10px;
   }
@@ -2247,14 +2245,69 @@ font-weight: 700;
     transform: translateY(3px);
     width: 30px;
 }
-
+.sidebar__widget:nth-last-child .sidebar__post-item{
+  margin-bottom: 0px;
+}
 /*** 
 
 ====================================================================
-	News Section
+	Course Section
 ====================================================================
 
 ***/
+work-area {
+  background: #000000;
+  padding: 80px 0px;
+}
+.padding-right-50 {
+padding-right: 50px;
+}
+.work-description a:nth-child(1) {
+display: block;
+}
+.work-description .item {
+background: rgba(119, 85, 255, 0.12);
+color: #fff;
+font-size: 16px;
+padding: 6px 15px;
+font-weight: 400;
+line-height: 30px;
+border-radius: 30px;
+margin-right: 9px;
+margin-bottom: 10px;
+display: inline-block;
+}
+.work-description-title {
+color: #fff;
+transition: all 0.3sease-in-out;
+font-size: 36px;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+margin: 10px 0px;
+}
+
+.work-area .description-title p {
+color: #9A9A9C;
+margin-bottom: 28px;
+font-size: 19px;
+}
+.work-item {
+position: relative;
+}
+.padding-left-50 {
+padding-left: 50px;
+}
+.work-item-img img {
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-ms-border-radius: 20px;
+-o-border-radius: 20px;
+position: relative;
+}
+
 /*** 
 
 ====================================================================
