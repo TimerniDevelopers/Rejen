@@ -189,7 +189,32 @@
         srcAction: 'iframe_src',
     }
     });  
-  
+    // / Set the date to count down to
+    let countdownDate = new Date("April 31, 2025 23:59:59").getTime();
+    
+    // Update the countdown every second
+    let x = setInterval(function () {
+        let now = new Date().getTime();
+        let timeLeft = countdownDate - now;
+    
+        // Time calculations for days, hours, minutes, and seconds
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+        // Display the result in the elements with corresponding IDs
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+    
+        // If the countdown is finished, display a message
+        if (timeLeft < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
   
 
 })(jQuery);
