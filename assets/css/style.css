@@ -874,7 +874,7 @@ position: relative;
 .main-footer .footer-upper {
 position: relative;
 padding: 30px 0 7px;
-background-color: #151518;
+background-color: var(--theme-color2);
 }
 .main-footer .widgets-section {
 position: relative;
@@ -942,7 +942,7 @@ color: var(--theme-color1);
 }
 .contact-info-block .inner .sub-title {
 font-size: 12px;
-color: #7f7f7f;
+color: #fff;
 font-weight: 400;
 line-height: 20px;
 display: block;
